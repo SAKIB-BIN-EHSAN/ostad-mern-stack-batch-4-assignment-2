@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ostad-Assignment</title>
+  </head>
+  <body>
+    <p id="counter">0</p>
+    <button id="increaseBtn">Click</button>
+
+    <script>
+      var button = document.getElementById("increaseBtn");
+      button.addEventListener("click", function () {
+        var divElement = document.getElementById("counter");
+        var countValue = parseInt(divElement.innerText);
+        divElement.innerText = countValue + 1;
+      });
+    </script>
+  </body>
+</html>

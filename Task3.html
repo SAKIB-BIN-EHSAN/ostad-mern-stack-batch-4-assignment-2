@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ostad-Assignment</title>
+  </head>
+  <body>
+    <img src="" alt="" id="imgsection" />
+    <br />
+    <button id="btn1">Show Image1</button><button id="btn2">Show Image2</button>
+
+    <script>
+      var button1 = document.getElementById("btn1");
+      var button2 = document.getElementById("btn2");
+      var imageTag = document.getElementById("imgsection");
+
+      button1.addEventListener("click", function () {
+        imageTag.src = "./image1.jpg";
+      });
+
+      button2.addEventListener("click", function () {
+        imageTag.src = "./image2.jpg";
+      });
+    </script>
+  </body>
+</html>
